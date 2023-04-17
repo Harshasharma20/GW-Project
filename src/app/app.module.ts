@@ -47,7 +47,8 @@ import { InternProgramsComponent } from './intern-programs/intern-programs.compo
 import { FullStackComponent } from './intern-programs/full-stack/full-stack.component';
 import { ServerSideDeveloperComponent } from './intern-programs/server-side-developer/server-side-developer.component';
 import { FrontEndDeveloperComponent } from './intern-programs/front-end-developer/front-end-developer.component';
-
+import { EnquiryComponent } from './enquiry/enquiry.component';
+import { AutoCompleteModule } from 'primeng/autocomplete';
 
 const appRoutes: Routes = [
   {path: '', component:WelcomeLandingComponent},
@@ -80,7 +81,8 @@ const appRoutes: Routes = [
   {path: 'retail-ecommerce-software-development', component:RetailEcommerceSoftwareDevelopmentComponent},
   {path: 'education-elearning-software-development', component:EducationElearningSoftwareDevelopmentComponent},
   {path: 'media-software-development', component:MediaSoftwareDevelopmentComponent},
-  {path: 'Intership-Training', component:FullStackComponent}
+  {path: 'Intership-Training', component:FullStackComponent},
+  {path: 'inquiry',component:EnquiryComponent},
   
   
   
@@ -98,13 +100,14 @@ const appRoutes: Routes = [
     ContactComponent, WebAppDevelopmentComponent,
      MobileAppDevelopmentComponent, SoftwareProductDevelopmentComponent, 
      PortfolioComponent, AboutComponent, 
-     CrossPlatformDevelopmentComponent, DevopsDevelopmentComponent, 
-     ItStrategyConsultingFirmsComponent, HireDevelopersComponent, HireIosDevelopersComponent, HireAndroidDevelopersComponent, HireAngularjsDevelopersComponent, HireReactNativeDevelopersComponent, HireIonicDevelopersComponent, HireReactjsDevelopersComponent, HireMernStackDevelopersComponent, HireMeanStackDevelopersComponent, HireNodejsDevelopersComponent, HireVuejsDevelopersComponent, HireFrontEndDevelopersComponent, HireDevopsDevelopersComponent, HireJavaAngularjsDevelopersComponent, BankingFinancialServicesComponent, IndustriesComponent, AutomotiveCompaniesSoftwareDevelopmentComponent, LogisticsTransportationSoftwareDevelopmentComponent, RetailEcommerceSoftwareDevelopmentComponent, EducationElearningSoftwareDevelopmentComponent, MediaSoftwareDevelopmentComponent, InternProgramsComponent, FullStackComponent, ServerSideDeveloperComponent, FrontEndDeveloperComponent
+     CrossPlatformDevelopmentComponent, DevopsDevelopmentComponent,EnquiryComponent,
+     ItStrategyConsultingFirmsComponent, HireDevelopersComponent, HireIosDevelopersComponent, HireAndroidDevelopersComponent, HireAngularjsDevelopersComponent, HireReactNativeDevelopersComponent, HireIonicDevelopersComponent, HireReactjsDevelopersComponent, HireMernStackDevelopersComponent, HireMeanStackDevelopersComponent, HireNodejsDevelopersComponent, HireVuejsDevelopersComponent, HireFrontEndDevelopersComponent, HireDevopsDevelopersComponent, HireJavaAngularjsDevelopersComponent, BankingFinancialServicesComponent, IndustriesComponent, AutomotiveCompaniesSoftwareDevelopmentComponent, LogisticsTransportationSoftwareDevelopmentComponent, RetailEcommerceSoftwareDevelopmentComponent, EducationElearningSoftwareDevelopmentComponent, MediaSoftwareDevelopmentComponent, InternProgramsComponent, FullStackComponent, ServerSideDeveloperComponent, FrontEndDeveloperComponent, EnquiryComponent
      
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AutoCompleteModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
